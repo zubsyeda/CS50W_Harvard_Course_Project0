@@ -6,16 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Advanced Search</title>
     <link rel="stylesheet" href = "style.css">
+
+
+    <style>
+        form{
+            display: block;
+            text-align: left;
+            margin: 0 35px 25px 35px;
+        }
+        div label{
+            vertical-align: baseline;
+            min-width: 167px;
+            text-align: left;
+        }
+
+        div input
+        {
+            vertical-align: baseline;
+        }
+    </style>
 </head>
+
+
+
+
 <nav>
+    <img class = "advLogo" src = "images/googleLogo.png" alt = "Google Logo">
     <a href = "index.html">Google Search</a>
 </nav>
 <body>
+    <h1 class = "adv-search-h1">Advanced Search</h1>
+    <div class = "border"></div>
+    <h2 class = "adv-search-h2">Find pages with...</h2>
+
     <form action="https://www.google.com/search">
-        <input type="text" name="as_q">
-        <input type ="text" name = "as_epq">
-        <input type="text" name = "as_oq">
-        <input type="text" name = "as_eq">
+        <div>
+            <label for="a">all these words:</label>
+            <input class = "adv" id = "a" type="text" name="as_q">
+        </div>
+
+        <div>
+            <label for="b">this exact word or phrase:</label>
+            <input class = "adv" id = "b" type ="text" name = "as_epq">
+        </div>
+
+        <div>
+            <label for="c">any of these words:</label>
+            <input class = "adv" id = "c" type="text" name = "as_oq">
+        </div>
+
+        <div>
+            <label for="d">none of these words:</label>
+            <input class = "adv" id = "d" type="text" name = "as_eq">
+        </div>
+
         <div>
             <input type="submit" value="Advanced Search">
         </div>
